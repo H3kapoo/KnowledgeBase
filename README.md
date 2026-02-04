@@ -68,10 +68,20 @@ To actually apply the changes, reset the local HEAD to point to the end of the r
 ### C/C++ VSCode configuration
 ---
 ### Windows C/C++ configuration
+On Windows, the quickest way to get a C/C++ runtime and all the includes and such is to install MSYS2. It is basically a package manager.
+
+Install the UCRT (universal C runtime) toolchain which is basically the modern Windows C runtime (```ucrtbase.dll```)
+```bash
+  $ pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain
+  $ g++ --version # check all ok
+```
+
+#### References
+- https://github.com/msys2/msys2-installer/releases/
 ---
 ### C/C++ useful commands
 #### Quickly show used include paths
-Use if unsure where c/c++ compilers looks for <includes> on the system by default
+Use if unsure where c/c++ compilers look for <includes> on the system by default
 ```bash
   $ <compiler> -v -E -x <lang> -
   $ g++ -v -E -x c++ -
