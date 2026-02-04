@@ -78,6 +78,7 @@ Install the UCRT (universal C runtime) toolchain which is basically the modern W
 
 #### References
 - https://github.com/msys2/msys2-installer/releases/
+- https://code.visualstudio.com/docs/cpp/config-mingw
 ---
 ### C/C++ useful commands
 #### Quickly show used include paths
