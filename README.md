@@ -70,6 +70,12 @@ To actually apply the changes, reset the local HEAD to point to the end of the r
 ### Windows C/C++ configuration
 ---
 ### C/C++ useful commands
+#### Quickly show used include paths
+Use if unsure where c/c++ compilers looks for <includes> on the system by default
+```bash
+  $ <compiler> -v -E -x <lang> -
+  $ g++ -v -E -x c++ -
+```
 ---
 ### CMake
 
