@@ -44,6 +44,13 @@ Fetches changes from remote but it does not apply them locally just yet. ```git 
   $ git fetch <remote-name>
 ```
 
+#### Delete branch
+You can delete a branch locally and/or on the remote as well.
+```bash
+  $ git branch -d <branch-name>               # delete only locally
+  $ git push -d <remote-name> <branch-name>   # delete remotely as well
+```
+
 To actually apply the changes, reset the local HEAD to point to the end of the remote's branch (usually origin/master).
 > **_NOTE:_** ⚠️ This will purge any changes you already have done locally. Commit them or something before this if needed.
 ```bash
