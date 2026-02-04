@@ -5,9 +5,9 @@
 1. [Git](#git)
 2. [OpenGL](#opengl)
 3. [Windowing](#windowing)
-4. [C/C++ VSCode configuration](#C/C++VSCodeconfiguration)
-5. [Windows C/C++ configuration](#WindowsC/C++configuration)
-6. [C/C++ useful commands](#c/c++usefulcommands)
+4. [C/C++ VSCode configuration](#c/c++-vscode-configuration)
+5. [Windows C/C++ configuration](#windows-c/c++-configuration)
+6. [C/C++ useful commands](#c/c++-useful-commands)
 7. [CMake](#Cmake)
 
 ---
