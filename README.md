@@ -64,6 +64,9 @@ To actually apply the changes, reset the local HEAD to point to the end of the r
 ### OpenGL
 ---
 ### Windowing
+ - On Windows, right after creating a window a _FOCUS_ lost will immediately be sent to the previously focused window. Windows does not queue this event for the next poll to catch. Linux however does queue it.
+ - On Windows, while mouse-resizing, the window enters in a _MODAL_ state in which no events can be sent in order to wake up the thread waiting on events. On Linux X11 however, this operation always wakes up the thread if it was explicily waiting for an event, windows doesn't spawn this "wake up" event.
+
 ---
 ### C/C++ VSCode configuration
 ---
