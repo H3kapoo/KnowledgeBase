@@ -7,7 +7,7 @@
 3. [Windowing](#windowing)
 4. [C/C++ VSCode configuration](#C/C++VSCodeconfiguration)
 5. [Windows C/C++ configuration](#WindowsC/C++configuration)
-6. [C/C++ useful commands](#C/C++usefulcommands)
+6. [C/C++ useful commands](#c/c++usefulcommands)
 7. [CMake](#Cmake)
 
 ---
