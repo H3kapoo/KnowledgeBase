@@ -1,2 +1,68 @@
 # KnowledgeBase
-Collection of tips &amp; tricks, commands and more from different IT domains of interest
+---
+
+## Table of contents
+1. [Git](#git)
+2. [OpenGL](#opengl)
+3. [Windowing](#windowing)
+4. [C/C++ VSCode configuration](<C/C++ VSCode configuration>)
+5. [Windows C/C++ configuration](<Windows C/C++ configuration>)
+6. [C/C++ useful commands](<C/C++ useful commands>)
+7. [CMake](<Cmake>)
+
+---
+### Git
+Adding ```--help``` after each subcommand conveniently shows some small images of the flow some commands have.
+
+#### Merge & Rebase
+- Merge will just create a new commit on top of the destination branch that contains the changes from the last commit of the source branch.
+
+- Rebase will try to replay all the commits from the source branch on top of the destination branch & new commit hashes will be generated.
+
+Both can fail, but rebase keeps the history linear while merge gives you more history bloat.
+```bash
+  $ git merge <branch-from> <branch-into>
+  $ git rebase <branch-from> <branch-into>
+```
+
+<details>
+<summary>👉 Click here to expand</summary>
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/6a3b3c48-37e7-4105-8b0e-6091be6189ad" />
+</details>
+
+
+#### Pull
+Pulls down and integrates the changes from remote into your local commits/changes. It usually asks for a strategy to integrate. 
+```bash
+  $ git pull <remote-name>
+  $ git pull <remove-name> --rebase # Rebase is usually preferred in small projects, --merge otherwise
+```
+
+#### Fetch
+Fetches changes from remote but it does not apply them locally just yet. ```git log``` will still show you that the HEAD is at your last local known commit.
+```bash
+  $ git fetch <remote-name>
+```
+
+To actually apply the changes, reset the local HEAD to point to the end of the remote's branch (usually origin/master).
+> **_NOTE:_** ⚠️ This will purge any changes you already have done locally. Commit them or something before this if needed.
+```bash
+  $ git reset --hard <remote-name>/<branch-name>
+```
+
+#### References
+ - https://stackoverflow.com/questions/2530060/in-plain-english-what-does-git-reset-do
+ - https://www.atlassian.com/git/tutorials/merging-vs-rebasing
+---
+### OpenGL
+---
+### Windowing
+---
+### C/C++ VSCode configuration
+---
+### Windows C/C++ configuration
+---
+### C/C++ useful commands
+---
+### CMake
+
