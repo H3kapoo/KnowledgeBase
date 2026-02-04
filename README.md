@@ -76,6 +76,9 @@ Use if unsure where c/c++ compilers looks for <includes> on the system by defaul
   $ <compiler> -v -E -x <lang> -
   $ g++ -v -E -x c++ -
 ```
+
+#### References
+- https://stackoverflow.com/questions/11946294/dump-include-paths-from-g
 ---
 ### CMake
 
