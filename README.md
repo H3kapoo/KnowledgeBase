@@ -64,6 +64,7 @@ To actually apply the changes, reset the local HEAD to point to the end of the r
 ```bash
   $ git reset --hard <remote-name>/<branch-name>
 ```
+
 #### Create branch
 Create new branch then switch to it. ```git status``` shows where you are.
 ```bash
