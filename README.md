@@ -64,6 +64,16 @@ To actually apply the changes, reset the local HEAD to point to the end of the r
 ```bash
   $ git reset --hard <remote-name>/<branch-name>
 ```
+#### Create branch
+Create new branch then switch to it. ```git status``` shows where you are.
+```bash
+  $ git branch <new-branch-name>
+  $ git checkout <new-branch-name>
+```
+Shorthand:
+```bash
+  $ git checkout -b <new-branch_name>
+```
 
 #### Delete branch
 You can delete a branch locally and/or on the remote as well.
