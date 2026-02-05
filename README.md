@@ -84,6 +84,7 @@ Credentials are stored (at least on Linux) in : ```~/.git-credentials```
 #### References
  - https://stackoverflow.com/questions/2530060/in-plain-english-what-does-git-reset-do
  - https://www.atlassian.com/git/tutorials/merging-vs-rebasing
+ - https://docs.github.com/en/get-started/git-basics/managing-remote-repositories
 ---
 ### OpenGL
 - GPUs support only a fixed number of uniform components until they refuse to compile. Basically one component is equal to one int32_t (4bytes). When shaders spill out this type of error "too many components bla bla", just reduce the number of components from your shader program.
