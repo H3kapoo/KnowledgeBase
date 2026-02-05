@@ -51,6 +51,12 @@ You can delete a branch locally and/or on the remote as well.
   $ git push -d <remote-name> <branch-name>   # delete remotely as well
 ```
 
+To actually apply the changes, reset the local HEAD to point to the end of the remote's branch (usually origin/master).
+> **_NOTE:_** ⚠️ This will purge any changes you already have done locally. Commit them or something before this if needed.
+```bash
+  $ git reset --hard <remote-name>/<branch-name>
+```
+
 #### Save credentials
 To do that, use this command and it will ask you only once to introduce your user+password. The password now is a long hash code.
 ```bash
@@ -58,11 +64,6 @@ To do that, use this command and it will ask you only once to introduce your use
 ```
 Credentials are stored (at least on Linux) in : ```~/.git-credentials```
 
-To actually apply the changes, reset the local HEAD to point to the end of the remote's branch (usually origin/master).
-> **_NOTE:_** ⚠️ This will purge any changes you already have done locally. Commit them or something before this if needed.
-```bash
-  $ git reset --hard <remote-name>/<branch-name>
-```
 
 #### References
  - https://stackoverflow.com/questions/2530060/in-plain-english-what-does-git-reset-do
