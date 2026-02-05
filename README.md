@@ -8,7 +8,7 @@
 4. [C/C++ VSCode configuration](#cc-vscode-configuration)
 5. [Windows C/C++ configuration](#windows-cc-configuration)
 6. [C/C++ useful commands](#cc-useful-commands)
-7. [CMake](#Cmake)
+7. [CMake](#cmake)
 
 ---
 ### Git
@@ -62,6 +62,11 @@ To actually apply the changes, reset the local HEAD to point to the end of the r
  - https://www.atlassian.com/git/tutorials/merging-vs-rebasing
 ---
 ### OpenGL
+- GPUs support only a fixed number of uniform components until they refuse to compile. Basically one component is equal to one int32_t (4bytes). When shaders spill out this type of error "too many components bla bla", just reduce the number of components from your shader program.
+  ```cpp
+    int32_t maxUniforms;
+    glGetIntegerv(GL_MAX_VERTEX_UNIFORM_COMPONENTS, &maxUniforms);
+  ```
 ---
 ### Windowing
  - On Windows, right after creating a window a _FOCUS_ lost will immediately be sent to the previously focused window. Windows does not queue this event for the next poll to catch. Linux however does queue it.
@@ -91,8 +96,12 @@ Use if unsure where c/c++ compilers look for <includes> on the system by default
   $ g++ -v -E -x c++ -
 ```
 
+#### Embedding lib search paths
+For that, RPATH propery/concept shall be used
+
 #### References
 - https://stackoverflow.com/questions/11946294/dump-include-paths-from-g
+- https://en.wikipedia.org/wiki/Rpath
 ---
 ### CMake
 
