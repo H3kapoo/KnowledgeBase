@@ -30,6 +30,22 @@ Both can fail, but rebase keeps the history linear while merge gives you more hi
 <img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/6a3b3c48-37e7-4105-8b0e-6091be6189ad" />
 </details>
 
+#### Add/Remove a remote
+Add a remote to the specified URL.
+
+```bash
+  $ git remote add "name" <url>
+  $ git push -u <remote-name> <branch-name> # to push
+```
+View remotes up/down:
+```bash
+  $ git remote -v
+```
+
+Remove a specific remote name
+```bash
+  $ git remote rm <remote-name>
+```
 
 #### Pull
 Pulls down and integrates the changes from remote into your local commits/changes. It usually asks for a strategy to integrate. 
