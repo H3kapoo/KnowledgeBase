@@ -90,12 +90,30 @@ To do that, use this command and it will ask you only once to introduce your use
 ```
 Credentials are stored (at least on Linux) in : ```~/.git-credentials```
 
+#### Stash changes
+Save changes in a stash and make the current directory "reset" to HEAD (aka before doing the modifications)
+```bash
+  $ git stash     # there can be options too but generally not needed
+```
+
+To see a list of stashes or see what files were modified in the stash:
+```bash
+  $ git stash list
+  $ git stash show
+```
+
+To delete the stash (usually gonna have only one):
+```bash
+  $ git stash drop (drop last)
+  $ git stash clear (clear all)
+```
 
 #### References
  - https://stackoverflow.com/questions/2530060/in-plain-english-what-does-git-reset-do
  - https://www.atlassian.com/git/tutorials/merging-vs-rebasing
  - https://docs.github.com/en/get-started/git-basics/managing-remote-repositories
  - https://stackoverflow.com/questions/66882952/how-to-create-new-local-branch-and-switch-between-branches-in-git
+ - https://git-scm.com/docs/git-stash
 ---
 ### OpenGL
 - GPUs support only a fixed number of uniform components until they refuse to compile. Basically one component is equal to one int32_t (4bytes). When shaders spill out this type of error "too many components bla bla", just reduce the number of components from your shader program.
