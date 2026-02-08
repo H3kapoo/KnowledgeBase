@@ -114,6 +114,7 @@ To delete the stash (usually gonna have only one):
  - https://docs.github.com/en/get-started/git-basics/managing-remote-repositories
  - https://stackoverflow.com/questions/66882952/how-to-create-new-local-branch-and-switch-between-branches-in-git
  - https://git-scm.com/docs/git-stash
+ - https://livablesoftware.com/tools-to-visualize-the-history-of-a-git-repository/
 ---
 ### OpenGL
 - GPUs support only a fixed number of uniform components until they refuse to compile. Basically one component is equal to one int32_t (4bytes). When shaders spill out this type of error "too many components bla bla", just reduce the number of components from your shader program.
