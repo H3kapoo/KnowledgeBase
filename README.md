@@ -108,6 +108,13 @@ To delete the stash (usually gonna have only one):
   $ git stash clear (clear all)
 ```
 
+#### Change default git editor
+This will change it globally, not only for one repo, which is 9/10 times what we want.
+```
+  $ git config --global code.editor "<name-of-new-editor-command>"
+  $ git config --global code.editor "vim"
+```
+
 #### References
  - https://stackoverflow.com/questions/2530060/in-plain-english-what-does-git-reset-do
  - https://www.atlassian.com/git/tutorials/merging-vs-rebasing
@@ -115,6 +122,7 @@ To delete the stash (usually gonna have only one):
  - https://stackoverflow.com/questions/66882952/how-to-create-new-local-branch-and-switch-between-branches-in-git
  - https://git-scm.com/docs/git-stash
  - https://livablesoftware.com/tools-to-visualize-the-history-of-a-git-repository/
+ - https://www.oreilly.com/library/view/gitlab-cookbook/9781783986842/apas07.html
 ---
 ### OpenGL
 - GPUs support only a fixed number of uniform components until they refuse to compile. Basically one component is equal to one int32_t (4bytes). When shaders spill out this type of error "too many components bla bla", just reduce the number of components from your shader program.
