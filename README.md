@@ -96,6 +96,12 @@ Save changes in a stash and make the current directory "reset" to HEAD (aka befo
   $ git stash     # there can be options too but generally not needed
 ```
 
+To apply stash N:
+```bash
+  $ git stash apply n  # OR
+  $ git stash apply stash@{n}
+```
+
 To see a list of stashes or see what files were modified in the stash:
 ```bash
   $ git stash list
@@ -123,6 +129,7 @@ This will change it globally, not only for one repo, which is 9/10 times what we
  - https://git-scm.com/docs/git-stash
  - https://livablesoftware.com/tools-to-visualize-the-history-of-a-git-repository/
  - https://www.oreilly.com/library/view/gitlab-cookbook/9781783986842/apas07.html
+ - https://stackoverflow.com/questions/1910082/git-stash-apply-version
 ---
 ### OpenGL
 - GPUs support only a fixed number of uniform components until they refuse to compile. Basically one component is equal to one int32_t (4bytes). When shaders spill out this type of error "too many components bla bla", just reduce the number of components from your shader program.
